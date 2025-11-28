@@ -1,25 +1,38 @@
 import pandas
 
 def load():
-    food_nutrient_dataset = pandas.read_csv("datasets/food_nutrient.csv")
-    nutrient_dataset = pandas.read_csv("datasets/nutrient.csv")
-    foundation_food_dataset = pandas.read_csv("datasets/foundation_food.csv")
+    food_nutrient_df = pandas.read_csv("datasets/food_nutrient.csv", low_memory=False)
+    nutrient_df = pandas.read_csv("datasets/nutrient.csv")
+    foundation_food_df = pandas.read_csv("datasets/foundation_food.csv")
 
     col1 = ["fdc_id", "nutrient_id"]
     col2 = ["nutrient_nbr"]
     col3 = ["fdc_id"]
-    food_nutrient_dataset = food_nutrient_dataset.drop_duplicates(subset=col1)
-    nutrient_dataset = nutrient_dataset.drop_duplicates(subset=col2)
-    foundation_food_dataset = foundation_food_dataset.drop_duplicates(subset=col3)
+    food_nutrient_df = food_nutrient_df.drop_duplicates(subset=col1)
+    nutrient_df = nutrient_df.drop_duplicates(subset=col2)
+    foundation_food_df = foundation_food_df.drop_duplicates(subset=col3)
 
-    columns = ["amount","data_points","derivation_id","min","max","median","footnote","min_year_acquired"]
-    for i in columns:
-        food_nutrient_dataset = pandas.to_numeric(food_nutrient_dataset[i]).fillna(food_nutrient_dataset[i].mean())
+    columns = ['amount', 'data_points', 'derivation_id', 'min', 'max', 'median', 'min_year_acquired']
+    for col in columns:
+        if col in food_nutrient_df.columns:
+            food_nutrient_df[col] = pandas.to_numeric(food_nutrient_df[col], errors='coerce').fillna(food_nutrient_df[col].mean())
 
-    foundation_food_dataset["f_name"] = foundation_food_dataset["NDB_number"] + " " + foundation_food_dataset["footnote"].fillna(" ")
+    nutrient_df["nutrient_nbr"] = pandas.to_numeric(nutrient_df["nutrient_nbr"], errors="coerce")
+    nutrient_df = nutrient_df.dropna(subset=["nutrient_nbr"])
 
-    merged_dataset = food_nutrient_dataset.merge(nutrient_dataset, left_on="nutrient_id", right_on="nutrient_nbr", how="left").merge(foundation_food_dataset["fdc_id", "f_name"], on="fdc_id", how="left")
+    food_nutrient_df['fdc_id'] = food_nutrient_df['fdc_id'].astype(int)
+    foundation_food_df['fdc_id'] = foundation_food_df['fdc_id'].astype(int)
 
-    merged_dataset = merged_dataset.dropna(subset=["f_name", "name", "amount"])
+    food_nutrient_df["nutrient_id"] = food_nutrient_df["nutrient_id"].astype(int)
+    nutrient_df["nutrient_nbr"] = nutrient_df["nutrient_nbr"].astype(int)
+    
+    foundation_food_df["food"] = foundation_food_df["NDB_number"].astype(str) + " " + foundation_food_df["footnote"].fillna(" ")
+
+    merged_dataset = food_nutrient_df.merge(nutrient_df, left_on="nutrient_id", right_on="id", how="left").merge(foundation_food_df[["fdc_id", "food"]], on="fdc_id", how="left")
+
+    merged_dataset = merged_dataset[['fdc_id', 'food', 'nutrient_id', 'name', 'amount', 'unit_name']]
+    merged_dataset.rename(columns={'name': 'nutrient_name'}, inplace=True)
+
+    merged_dataset = merged_dataset.dropna(subset=["food", "nutrient_name", "amount"])
 
     return merged_dataset

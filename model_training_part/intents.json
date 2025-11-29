@@ -1,0 +1,62 @@
+{
+    "intents": [
+        {
+            "tag": "Hello!",
+            "patters": [
+                "Hello there!",
+                "How are you today?",
+                "Hi!",
+                "Hello?",
+                "hello",
+                "Good morning!!",
+                "Good evening!!",
+                "Good to see you today!"
+            ],
+            "responses": [
+                "Hi there, It's nice to meet you today! I will be your nutition learning assistant. How can I help you today?",
+                "Good morning!! How can I help you today with your nutrition planning and maintainig a healthy diet ?",
+                "Good to see you today! Great job at taking your first step towards having a healthier and balanced diet. Feel free to ask me about any nutrition queries!",
+                "Hello! I am here to help you provide simple and factual infromation based on evidence for any diet clains or health related questions you have."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Bye!",
+            "patterns": [
+                "Bye!!",
+                "Bye-bye!",
+                "See you soon!",
+                "See you later!",
+                "Goodbye!",
+                "best regards!"
+            ],
+            "responses": [
+                "Bye, and Don't forget to drink your water!",
+                "Thank you! and feel free to come back!",
+                "Bye, see you soon!!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Thank you!",
+            "patterns": [
+                "Thanks!",
+                "Thank you!",
+                "Thank you so much!",
+                "Thank you",
+                "Thanku",
+                "That's helpful, thanks",
+                "Cheers"
+            ],
+            "responses": [
+                "Always happy to help!",
+                "No worries",
+                "You're Welcome!!",
+                "No problem!",
+                "My pleasure!",
+                "Any time!"
+            ],
+            "context_set": ""
+        }
+    ]
+}

@@ -1,11 +1,11 @@
 import json
-import tensorflow as tf # type: ignore
-import pandas as pd #type:ignore
-import ntlk # pyright: ignore[reportMissingImports]
-import numpy as np #type:ignore 
-from tensorflow.keras. preprocessing. sequence import pad_sequences #type:ignore
-from tensorflow.keras.layers import Input, Embedding, LSTM, Dense,GlobalMaxPooling1D,Flatten # type: ignore
-from tensorflow.keras. preprocessing. text import Tokenizer #type:ignore
+import tensorflow as tf 
+import pandas as pd 
+import ntlk 
+import numpy as np
+from tensorflow.keras. preprocessing. sequence import pad_sequences 
+from tensorflow.keras.layers import Input, Embedding, LSTM, Dense,GlobalMaxPooling1D,Flatten 
+from tensorflow.keras. preprocessing. text import Tokenizer 
 import pickle
 import os
 
@@ -68,4 +68,5 @@ model.save( "F&N_intent_model.h5" )
 
 
 with open( "F&N_tokenizer.pickle" , "wb" ) as file: 
+
     tokenizer = pickle.load (file)

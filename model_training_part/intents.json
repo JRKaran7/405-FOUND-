@@ -2,7 +2,7 @@
     "intents": [
         {
             "tag": "Hello!",
-            "patters": [
+            "patterns": [
                 "Hello there!",
                 "How are you today?",
                 "Hi!",
@@ -13,10 +13,10 @@
                 "Good to see you today!"
             ],
             "responses": [
-                "Hi there, It's nice to meet you today! I will be your nutition learning assistant. How can I help you today?",
-                "Good morning!! How can I help you today with your nutrition planning and maintainig a healthy diet ?",
+                "Hi there, It's nice to meet you today! I will be your nutrition learning assistant. How can I help you today?",
+                "Good morning!! How can I help you today with your nutrition planning and maintaining a healthy diet ?",
                 "Good to see you today! Great job at taking your first step towards having a healthier and balanced diet. Feel free to ask me about any nutrition queries!",
-                "Hello! I am here to help you provide simple and factual infromation based on evidence for any diet clains or health related questions you have."
+                "Hello! I am here to help you provide simple and factual information based on evidence for any diet claims or health related questions you have."
             ],
             "context_set": ""
         },
@@ -65,15 +65,15 @@
                 "How many calories are there in chicken rice",
                 "Is rice healthy to eat?",
                 "What are the nutritional content in egg?",
-                "Calorie count for an avacado",
+                "Calorie count for an avocado",
                 "What nutritions are there in banana?",
-                "Are protien shake healthy to consume?",
+                "Are protein shake healthy to consume?",
                 "Facts about oatmeal and salmon?"
             ],
             "responses": [
                 "An average apple has 95 calories (kcal) and it is a good source of fibre!",
                 "Avocados are healthy fats, high in potassium and fiber. They are very nutritious!",
-                "Protien shakes can be healthy if consumed in proper amount and is a convinient way to intake supplement protien.",
+                "Protein shakes can be healthy if consumed in proper amount and is a convenient way to intake supplement protein.",
                 "A typical plate of chicken rice contains around 600-700 calories, but this can vary significantly based on preparation and portion size."
             ],
             "context_set": ""
@@ -95,7 +95,7 @@
             "context_set": ""
         },
         {
-            "tag": "recipies",
+            "tag": "recipes",
             "patterns": [
                 "Suggest a healthy dinner recipe",
                 "What can I cook with these ingredients?",
@@ -122,17 +122,17 @@
             "context_set": ""
         },
         {
-            "tag": "calrify_nutrients",
+            "tag": "clarify_nutrients",
             "patterns": [
                 "What are healthy fats?",
                 "what are macronutrients?",
                 "what does calorie deficit mean?",
-                "Which food have protien and why do we need them?",
+                "Which food have protein and why do we need them?",
                 "Explain what fiber does"
             ],
             "responses": [
                 "Healthy fats are--------------------------------",
-                "Macronutrients are nutrients that your body needs in large amounts such as protien, carbohydrates and fats.",
+                "Macronutrients are nutrients that your body needs in large amounts such as protein, carbohydrates and fats.",
                 "A calorie deficit means eating fewer calories than what your body needs and usually uses."
             ],
             "context_set": ""
@@ -145,8 +145,8 @@
                 "What drink can I consume instead of sugary soda?"
             ],
             "responses": [
-                "That is a great step towards building a healtheir routine! You could try out popcorn or roasted chickpeas which are crunchy and much lower in calories",
-                "Starting the day out with greek youghurt with dry fruits like rasin and cashew along side fruits is a healthy start to the day.",
+                "That is a great step towards building a healthier routine! You could try out popcorn or roasted chickpeas which are crunchy and much lower in calories",
+                "Starting the day out with greek yogurt with dry fruits like rasin and cashew along side fruits is a healthy start to the day.",
                 "Sparkling water with lemon is a great soda replacement!"
             ],
             "context_set": ""
@@ -156,12 +156,12 @@
             "patterns": [
                 "What should i eat if i want to gain muscle?",
                 "What should i focus on when i want to lose fat?",
-                "should i cut dowm my food in order to lose weight?"
+                "should i cut down my food in order to lose weight?"
             ],
             "responses": [
-                "For muscle building, prioritize protien-rich food like chicken, yoghurt, tofu, eggs and vegetables.",
-                "If your goal is lose fat, you should focus on high fibre food and lean protiens to keep you full longer. While maintaing a balanced diet and stying hydrated!",
-                "Cutting down food doesnt help lose weight, it rather creates nutrition deficit. Rather, you should balance meals and gentle swap to healthy food and enjoyable mobvement rather than eating less."
+                "For muscle building, prioritize protein-rich food like chicken, yoghurt, tofu, eggs and vegetables.",
+                "If your goal is lose fat, you should focus on high fibre food and lean proteins to keep you full longer. While maintaing a balanced diet and staying hydrated!",
+                "Cutting down food doesnt help lose weight, it rather creates nutrition deficit. Rather, you should balance meals and gentle swap to healthy food and enjoyable movement rather than eating less."
             ],
             "context_set": ""
         },
@@ -171,9 +171,9 @@
                 "Do carbs make you fat?",
                 "Does detox tea really work in losing?",
                 "Is eating after 9pm bad for your health?",
-                "I heard that lomon water burns fat. Is it true?",
+                "I heard that lemon water burns fat. Is it true?",
                 "Is it true that consuming supplements better than eating food?",
-                "Does skipping beakfast help in losing weight? and is it healthy?"
+                "Does skipping breakfast help in losing weight? and is it healthy?"
             ],
             "responses": [
                 "That's a common misunderstanding. Evidence shows that carbs don't cause fat gain unless you're in a calorie surplus.",

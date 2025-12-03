@@ -1,98 +1,161 @@
-{
-    "intents": [
+{"intents": [
         {
-            "tag": "Hello!",
+            "tag": "good_bye",
             "patterns": [
-                "Hello there!",
-                "How are you today?",
-                "Hi!",
-                "Hello?",
-                "hello",
-                "Good morning!!",
-                "Good evening!!",
-                "Good to see you today!"
-            ],
-            "responses": [
-                "Hi there, It's nice to meet you today! I will be your nutrition learning assistant. How can I help you today?",
-                "Good morning!! How can I help you today with your nutrition planning and maintaining a healthy diet ?",
-                "Good to see you today! Great job at taking your first step towards having a healthier and balanced diet. Feel free to ask me about any nutrition queries!",
-                "Hello! I am here to help you provide simple and factual information based on evidence for any diet claims or health related questions you have."
-            ],
-            "context_set": ""
-        },
-        {
-            "tag": "Bye!",
-            "patterns": [
-                "Bye!!",
                 "Bye-bye!",
-                "See you soon!",
+                "Bye!!",
                 "See you later!",
+                "See you soon!",
+                "best regards!",
                 "Goodbye!",
-                "best regards!"
+                "Talk to you later",
+                "See ya",
+                "Peace out",
+                "Thanks bye",
+                "Catch you later",
+                "Until next time",
+                "Gotta go",
+                "Take care",
+                "I'm done",
+                "Later",
+                "Cya",
+                "Goodbye for now"
             ],
             "responses": [
+                "Bye, and don't forget to drink water!",
                 "Bye, and Don't forget to drink your water!",
-                "Thank you! and feel free to come back!",
+                "Thank you! Feel free to come back!",
+                "Bye, see you soon!",
+                "Good bye! see you soon!",
+                "Bye-Bye, Feel free to come back whenever!",
                 "Bye, see you soon!!"
-            ],
-            "context_set": ""
+            ]
         },
         {
-            "tag": "Thank you!",
+            "tag": "thank_you",
             "patterns": [
                 "Thanks!",
-                "Thank you!",
                 "Thank you so much!",
-                "Thank you",
+                "Thanks bot",
                 "Thanku",
+                "Thank you!",
                 "That's helpful, thanks",
-                "Cheers"
+                "Much appreciated",
+                "Thanks a lot",
+                "Cheers",
+                "Thank you very much",
+                "Thanks for the help",
+                "Thx",
+                "Appreciate it",
+                "Many thanks",
+                "I appreciate that",
+                "Ty",
+                "Thank you for your help"
             ],
             "responses": [
                 "Always happy to help!",
-                "No worries",
-                "You're Welcome!!",
-                "No problem!",
+                "No worries!",
+                "You're welcome!",
                 "My pleasure!",
-                "Any time!"
-            ],
-            "context_set": ""
+                "Any time!",
+                "No problem!",
+                "Sure thing! Feel free to come back!"
+            ]
         },
         {
             "tag": "nutri_data",
             "patterns": [
-                "How much calories are there in apple?",
-                "How many calories are there in chicken rice",
-                "Is rice healthy to eat?",
-                "What are the nutritional content in egg?",
+                "Tell me about apple nutrition",
+                "Facts about oatmeal and salmon?",
+                "Show me nutrition for eggs",
+                "Nutrition in broccoli",
+                "How many calories are there in chicken rice?",
+                "Minerals in spinach",
+                "What are the nutritional contents in an egg?",
+                "Fiber in vegetables",
+                "What nutrition is in banana?",
+                "Nutrition facts for beef",
+                "Nutrition information for pasta",
+                "How many carbs in bread",
+                "Info about rice",
+                "Fat content in nuts",
+                "What's the nutritional value of cheese",
+                "What does salmon contain",
+                "How healthy is yogurt",
+                "Calories in pizza",
+                "Nutrition in almonds",
+                "Vitamins in oranges",
+                "Tell me nutrients in",
+                "Sugar in fruits",
+                "What are the macros in",
+                "Protein in fish",
+                "Nutritional breakdown of",
+                "How much protein does",
+                "What's in milk",
+                "Calorie info for",
+                "Tell me about chicken nutrients",
+                "What's the nutrition",
+                "Are protein shakes healthy?",
                 "Calorie count for an avocado",
-                "What nutritions are there in banana?",
-                "Are protein shake healthy to consume?",
-                "Facts about oatmeal and salmon?"
+                "Give me info about",
+                "Is rice healthy to eat?",
+                "Tell me about the nutrients",
+                "How much calories are there in apple?",
+                "Nutritional content"
             ],
             "responses": [
-                "An average apple has 95 calories (kcal) and it is a good source of fibre!",
-                "Avocados are healthy fats, high in potassium and fiber. They are very nutritious!",
-                "Protein shakes can be healthy if consumed in proper amount and is a convenient way to intake supplement protein.",
-                "A typical plate of chicken rice contains around 600-700 calories, but this can vary significantly based on preparation and portion size."
-            ],
-            "context_set": ""
+                "Here is the nutrition information you requested!",
+                "Oatmeal is rich in fiber and keeps you full, while salmon gives you high-quality protein and healthy omega-3 fats.",
+                "A medium apple has around 95 calories, plus fiber, vitamin C, and antioxidants. Great for energy and digestion!",
+                "One large egg has about 6g of protien, healthy fats, and nutrients like vitamin B12 and choline.",
+                "Broccoli is packed with vitamin C, vitamin K, fibre and anti-oxidants with only about 34cal per 100g.",
+                "Spinach contains iron, magnasium, potassium, vitamin K, and fibre. All have very low calories.",
+                "A typical plate of chicken rice can range from 500-600+ calories depending on portion size and sauces.",
+                "Vegetables are excellent sources of dietary fiber, which helps digestion and keeps you full for longer.",
+                "A medium banana has around 105 calories, potassium, vitamin B6, vitamin C, and natural carbohydrate for energy.",
+                "An egg contains protein, healthy fats, vitamin D, B12, choline, and small amounts of almost every essential nutrient.",
+                "Beef provides protien, iron, zinc, and vitamin B12. Lean cuts have less fat while still gving strong nutrition.",
+                "pne slice of bread usually contains around 12 - 15g of carbs, depending on the type and brand.",
+                "Pasta mainly provides carbohydrates for energy, plus small amounts of protein and B-vitamins. Whole-grain pasta has more fiber.",
+                "Cooked white rice has about 28g of carbs per 100g and small amounts of protein and B-vitamins. Brown rice adds more fiber."
+            ]
         },
         {
             "tag": "diet_log",
             "patterns": [
                 "I just had a burger",
                 "Log meal: chicken rice with tofu",
+                "I had dinner",
+                "Save this meal",
                 "I ate chips just now",
                 "Add food to my food log",
-                "Log the amount calories. i consumed today"
+                "Log the amount of calories I consumed today",
+                "Track my meal",
+                "Log today's food",
+                "Track what I ate",
+                "I consumed",
+                "Just finished eating",
+                "Had some food",
+                "Ate something",
+                "Record my snack",
+                "I just ate pizza",
+                "Record my lunch",
+                "Add breakfast to log"
             ],
             "responses": [
-                "Noted, i have added that to your meal log for today.",
+                "Noted, I have added that to your meal log.",
                 "Meal logged!",
-                "Sure, I have integrated that to your daily intake log."
-            ],
-            "context_set": ""
+                "Sure, it's added to your daily intake log.",
+                "Meal saved! If you would like, I can estimate the calories or nutrients.",
+                "Got it! I've logged that meal for you. Want a quick nutrition breakdown?",
+                "Logged!! Keeping track consistently helps you understand your eating petterns.",
+                "Alright, I've added that to your food log. How ddi the meal make you feel?",
+                "Done! I'vce added it to your entries of food for today. Want suggestions for a balanced day meal?",
+                "All set! your meal is now recorded. Would you like portion or nutrition info?",
+                "Thanks for telling me! I've recorded it.",
+                "Your food has been logged. Let me know if you want a quick summary of your day so far.",
+                "Meal tracked! Want to review your daily intake or keep going?"
+            ]
         },
         {
             "tag": "recipes",
@@ -102,85 +165,191 @@
                 "What's a high-protein breakfast idea?",
                 "I need a recipe with chicken and broccoli",
                 "Give me a low-carb meal idea",
-                "Healthy meal ideas please"
+                "Healthy meal ideas please",
+                "Recipe suggestions",
+                "What should I cook",
+                "Meal ideas for dinner",
+                "Quick healthy recipes",
+                "Easy meal to make",
+                "What can I make with chicken",
+                "Breakfast ideas",
+                "Lunch suggestions",
+                "Dinner recipes",
+                "Healthy snack ideas",
+                "Recipe for weight loss",
+                "High protein meals",
+                "Low calorie recipes",
+                "Vegetarian meal ideas",
+                "Vegan recipes",
+                "Recipe with eggs",
+                "What to cook tonight",
+                "Meal prep ideas",
+                "Quick breakfast",
+                "Easy lunch",
+                "Simple dinner",
+                "Show me recipes",
+                "Give me meal ideas",
+                "What should I eat for",
+                "Help me plan a meal"
             ],
             "responses": [
-                "How about a chicken and vegetable stir-fry with brown rice? It's lean and nutrient-rich.",
-                "You could try a large salad with lean protein and a light vinaigrette.",
-                "A high-protein breakfast idea: Greek yogurt with a scoop of protein powder, berries, and some nuts."
-            ],
-            "context_set": ""
-        },
-        {
-            "tag": "no_answer",
-            "patterns": [],
-            "responses": [
-                "Sorry, I'm not sure how to answer that. Could you rephrase your question?",
-                "I didn't quite understand. I can help with general nutrition facts, meal logging, and recipe suggestions.",
-                "Please try asking something different. I have knowledge on diet and nutrition."
-            ],
-            "context_set": ""
+                "How about a chicken and vegetable stir-fry with brown rice?",
+                "You could try a salad with lean protein and vinaigrette.",
+                "A high-protein breakfast: Greek yogurt, berries, nuts."
+            ]
         },
         {
             "tag": "clarify_nutrients",
             "patterns": [
                 "What are healthy fats?",
-                "what are macronutrients?",
-                "what does calorie deficit mean?",
-                "Which food have protein and why do we need them?",
-                "Explain what fiber does"
+                "What are macronutrients?",
+                "What does calorie deficit mean?",
+                "Which foods have protein?",
+                "Explain what fiber does",
+                "What is protein",
+                "Tell me about carbohydrates",
+                "What are vitamins",
+                "Explain minerals",
+                "What does iron do",
+                "What is calcium",
+                "Tell me about omega 3",
+                "What are amino acids",
+                "Explain metabolism",
+                "What is BMI",
+                "Define micronutrients",
+                "What does vitamin C do",
+                "Explain antioxidants",
+                "What is cholesterol",
+                "Tell me about sodium",
+                "What is glucose",
+                "Explain ketosis",
+                "What are electrolytes",
+                "Define nutrients",
+                "What is nutrition",
+                "Explain calories",
+                "What are macros",
+                "Tell me about fats",
+                "What is dietary fiber",
+                "Explain carbs"
             ],
             "responses": [
-                "Healthy fats are--------------------------------",
-                "Macronutrients are nutrients that your body needs in large amounts such as protein, carbohydrates and fats.",
-                "A calorie deficit means eating fewer calories than what your body needs and usually uses."
-            ],
-            "context_set": ""
+                "Healthy fats include avocado, nuts, olive oil and are essential for hormones+brain function.",
+                "Macronutrients are protein, carbs, and fats.",
+                "A calorie deficit means eating fewer calories than your body uses."
+            ]
         },
         {
             "tag": "alternative_food",
             "patterns": [
-                "What are some healthier alternative to chips?",
+                "What are some healthier alternatives to chips?",
                 "Healthy and light breakfast ideas",
-                "What drink can I consume instead of sugary soda?"
+                "What drink can I consume instead of sugary soda?",
+                "Alternative to sugar",
+                "Healthier option for bread",
+                "Replace white rice with",
+                "Better choice than fast food",
+                "Healthy snack instead of candy",
+                "What to eat instead of junk food",
+                "Substitute for butter",
+                "Alternative to processed food",
+                "Healthier than fried food",
+                "Better options for dessert",
+                "Replace soda with",
+                "Healthier than pizza",
+                "Alternative snacks",
+                "Better breakfast options",
+                "Healthy swaps",
+                "Replace unhealthy food",
+                "What's better than",
+                "Healthier version of",
+                "Good substitute for",
+                "Foods high in protein",
+                "Foods high in fiber",
+                "Foods with iron",
+                "Best sources of calcium",
+                "Foods rich in vitamins",
+                "High protein foods",
+                "Low calorie alternatives"
             ],
             "responses": [
-                "That is a great step towards building a healthier routine! You could try out popcorn or roasted chickpeas which are crunchy and much lower in calories",
-                "Starting the day out with greek yogurt with dry fruits like rasin and cashew along side fruits is a healthy start to the day.",
-                "Sparkling water with lemon is a great soda replacement!"
-            ],
-            "context_set": ""
+                "Here are healthier options!"
+            ]
         },
         {
-            "tag": "personal recommendation",
+            "tag": "personal_recommendation",
             "patterns": [
-                "What should i eat if i want to gain muscle?",
-                "What should i focus on when i want to lose fat?",
-                "should i cut down my food in order to lose weight?"
+                "What should I eat if I want to gain muscle?",
+                "What should I focus on to lose fat?",
+                "Should I cut down food to lose weight?",
+                "How to gain weight",
+                "Help me lose weight",
+                "Build muscle diet",
+                "Get stronger diet plan",
+                "Lose belly fat",
+                "How to get lean",
+                "Diet for weight loss",
+                "Food for muscle gain",
+                "What to eat to bulk up",
+                "How to cut fat",
+                "Diet advice",
+                "Nutrition plan for me",
+                "Personal diet help",
+                "What should I eat",
+                "How much should I eat",
+                "Help with my diet",
+                "Improve my eating",
+                "Get healthier",
+                "Better nutrition",
+                "Fitness diet",
+                "Bodybuilding diet",
+                "Athlete nutrition",
+                "Diet for energy",
+                "Food for focus",
+                "Eat for performance"
             ],
             "responses": [
-                "For muscle building, prioritize protein-rich food like chicken, yoghurt, tofu, eggs and vegetables.",
-                "If your goal is lose fat, you should focus on high fibre food and lean proteins to keep you full longer. While maintaing a balanced diet and staying hydrated!",
-                "Cutting down food doesnt help lose weight, it rather creates nutrition deficit. Rather, you should balance meals and gentle swap to healthy food and enjoyable movement rather than eating less."
-            ],
-            "context_set": ""
+                "For muscle building, prioritize high protein food like chicken, yogurt, tofu, eggs.",
+                "To lose fat, focus on high-fiber and lean protein meals.",
+                "Don't starve yourself! Eat balanced meals instead."
+            ]
         },
         {
-            "tag": "debunking_myth------------------------",
+            "tag": "debunking_myth",
             "patterns": [
                 "Do carbs make you fat?",
-                "Does detox tea really work in losing?",
-                "Is eating after 9pm bad for your health?",
-                "I heard that lemon water burns fat. Is it true?",
-                "Is it true that consuming supplements better than eating food?",
-                "Does skipping breakfast help in losing weight? and is it healthy?"
+                "Does detox tea help lose weight?",
+                "Is eating after 9pm bad?",
+                "Does lemon water burn fat?",
+                "Are supplements better than food?",
+                "Does skipping breakfast help lose weight?",
+                "Is all fat bad",
+                "Does eating at night cause weight gain",
+                "Are carbs unhealthy",
+                "Do I need to cut carbs",
+                "Is gluten bad for everyone",
+                "Does drinking water burn calories",
+                "Do eggs raise cholesterol",
+                "Is fruit sugar bad",
+                "Should I avoid all sugar",
+                "Does eating small meals boost metabolism",
+                "Is organic always healthier",
+                "Do cleanses work",
+                "Does apple cider vinegar burn fat",
+                "Is juice as healthy as fruit",
+                "Should I only eat egg whites",
+                "Does eating fat make you fat",
+                "Is brown sugar better than white",
+                "Do negative calorie foods exist",
+                "Does coffee dehydrate you",
+                "Is sea salt healthier",
+                "Do carbs turn to fat overnight",
+                "Should I avoid dairy"
             ],
             "responses": [
-                "That's a common misunderstanding. Evidence shows that carbs don't cause fat gain unless you're in a calorie surplus.",
-                "There's no scientific evidence that detox water alone can burn fat, especially in a targeted way like reducing belly fat.",
-                "Your body doesn't track the clock — total intake matters more than timing."
-            ],
-            "context_set": ""
+                "Carbs don't make you fat by themselves — excess calories do.",
+                "Detox teas do not burn fat. Hydration & diet matter more.",
+                "Your body doesn't track the time — total intake matters more."
+            ]
         }
     ]
 }

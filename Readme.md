@@ -5,7 +5,7 @@ A wonderful quote that people today try to follow. Along with heavy workouts, nu
 
 ## Statistics: - <br>
 * According to Pubmed's literature review of nutrition-related social content, 50% of instagram and 39.3% of youtube are known for spreading nutritional misinformation. In this study, 62% of the reviewed content includes misleading terms like "miracle" and "fad diets". (https://pubmed.ncbi.nlm.nih.gov/40008658/)
-* According to a survey by the British Nutrition Foundation, 56% of social media users are likely to change their diet based on the misleading information provided by influencers. Out of these people, 40% of people wanted to focus on weight loss and 36% on improving fitness.
+* According to a survey by the British Nutrition Foundation, 56% of social media users are likely to change their diet based on the misleading information provided by influencers. Out of these people, 40% of people wanted to focus on weight loss and 36% on improving fitness. (https://www.nutrition.org.uk/news/over-half-would-make-changes-to-their-diet-based-on-information-from-social-media/)
 
 ## Goal: - <br>
 Our team's goal is to develop a simple chatbot that provides true nutritional information, straightforward responses, and no false or self - generated ideas.

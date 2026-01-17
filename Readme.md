@@ -28,14 +28,14 @@ Our solution is to create an AI Nutrition chatbot that: <br>
 
 ## Roadmap of Code: - <br>
 1. The project started off with us brainstroming some ideas about the functionality of the chatbot. <br>
-2. Gave the chatbot a homogenized name -> HealthyMakan <br>
+2. Gave the chatbot a homogenized name -> Nutriclear <br>
 3. Secondly, we delegated each subcategory to each individual.<br>
 4. Relevent dataset was first created and updated gradually throughout the week. <br>
 5. Next, the NLU was created. <br>
 6. Thirdly, the intent training was formed. <br>
 7. Then, chat pipeline. <br>
 8. And, finally, response generation was coded. <br>
-9. All of this was then integrated together under one file, to form a functioning telegram chatbot, HealthyMakan.<br>
+9. All of this was then integrated together under one file, to form a functioning telegram chatbot, Nutriclear.<br>
 10. Lastly, Slides were crafted and we prepped for our presentation. <br>
 
 
